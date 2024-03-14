@@ -21,19 +21,62 @@ body{
     height: 6em
 }
 
+.nav-home-logo,
+.nav-menu-close,
+.nav-menu-clickable,
+.nav-menu-burger{
+    display: flex;
+    cursor: pointer
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-link{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: darkblue;
+}
+
+.nav-menu-close{
+    position:absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.8rem;
+}
+
+
+.nav-menu-burger{
+    font-size: 1.25rem;
+    column-gap: 0.5rem;
+    align-items: center;
+}
+
 /* Need to make sure that it is responsive */
 /* Have a mobile design approach */
 
-@media screen and (max-width:960px) {
+@media screen and (max-width: 960px) {
     .nav-menu{
         position: fixed;
         top: 0;
+        /* If this is -100% the whole nav bar disappears */
         right: 0;
+        
         background-color: gray;
+        backdrop-filter: blur(10px);
         width: 60%;
         height: 100%;
         padding: 6rem 3rem 0;
         /* Create a transition when a hamburger menu is created */
-        
+        transition: right 0.5s;         
     }
 }
+
