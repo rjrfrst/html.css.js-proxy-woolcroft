@@ -2,6 +2,7 @@
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 /* Header and nav bar */
@@ -11,6 +12,8 @@ body{
     top: 0;
     left: 0;
     background-color: transparent;
+    /* trial  */
+    z-index: var(--z-fixed);
 }
 
 .nav{
@@ -18,7 +21,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 6em
+    height: 6em;
 }
 
 .nav-home-logo,
@@ -29,21 +32,14 @@ body{
     cursor: pointer
 }
 
-.nav-list{
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.5rem;
-    list-style: none;
+.nav-home-logo i{
+    font-weight: 1rem;
 }
 
-.nav-link{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.nav-link:hover{
-    color: darkblue;
+.nav-menu-clickable{
+    font-size: 1rem;
+    column-gap: 0.5rem;
+    align-items: center;
 }
 
 .nav-menu-close{
@@ -51,6 +47,7 @@ body{
     top: 1rem;
     right: 1rem;
     font-size: 0.8rem;
+    color: gray;
 }
 
 
@@ -60,23 +57,47 @@ body{
     align-items: center;
 }
 
+
+/* This is the list inside the nav bar */
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-link{
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: darkblue;
+}
+
 /* Need to make sure that it is responsive */
 /* Have a mobile design approach */
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1605px) {
     .nav-menu{
         position: fixed;
         top: 0;
+
         /* If this is -100% the whole nav bar disappears */
-        right: 0;
-        
-        background-color: gray;
+        right: -500%;
+
+        background-color: darkslateblue;
         backdrop-filter: blur(10px);
-        width: 60%;
+        width: 80%;
         height: 100%;
         padding: 6rem 3rem 0;
+
         /* Create a transition when a hamburger menu is created */
         transition: right 0.5s;         
     }
 }
 
+.show-menu{
+    right: 0;
+}
