@@ -2,10 +2,32 @@
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    padding: 2em;
+    background: #2565AE
 }
 
-/* Header and nav bar */
+/* Colorschemes */
+.first-color{
+    background: #3C99DC;
+}
+
+.second-color{
+    background: #66D3FA;
+}
+
+.third-color{
+    background: #D5F3FE;
+}
+
+.fourth-color{
+    background: #2565AE;
+}
+
+.fifth-color{
+    background: #0F5298
+}
+
+/* HEADER AND NAV BAR SECTION: START */
 .header {
     position: fixed;
     width: 100%;
@@ -29,12 +51,17 @@ body{
 .nav-menu-clickable,
 .nav-menu-burger{
     display: flex;
-    cursor: pointer
+    cursor: pointer;
+    color: white;
 }
 
-.nav-home-logo i{
+.nav-home-logo{
     font-weight: 1rem;
+    color: white;
+    text-decoration: none;
 }
+
+
 
 .nav-menu-clickable{
     font-size: 1rem;
@@ -102,20 +129,84 @@ body{
     right: 0;
 }
 
+/* HEADER AND NAV BAR SECTION: END */
 
-/* HOME SECTION */
+/* HOME SECTION START */
 .home-container{
     padding-top: 3rem;
     row-gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .home-image{
-    width: 75%;
-    text-align: right;
+    max-height: 100%;
+    max-width: 100%;
+    width: 70%;
+    height: 70%;
+    justify-content: center;
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     .home-image {
-      width: 100%;
+      width: 50%;
     }
-  }
+  } */
+
+.home-title{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.home-quote{
+    text-align: center;
+}
+
+.home-description{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.home-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.home-buttons a {
+    max-width: 200px; 
+    text-align: center;
+}
+
+/* targetting specific buttons ABOUT US BTN */
+.about-us-btn{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 0.2rem;
+    border-radius: 2.5rem;
+    display: inline-flex;
+    text-decoration: none;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+/* Targetting the arrow in the span */
+.about-us-btn span{
+    background-color: lightgreen;
+    border-radius: 50%;
+}
+
+.about-us-btn:hover span{
+    transform: translateX(0.3rem);
+}
+
+/* Targeting specific buttons EVENTS BTN */
+.events-btn{
+    color: white;
+}
+
+.events-btn:hover{
+    color:lightgreen;
+}
