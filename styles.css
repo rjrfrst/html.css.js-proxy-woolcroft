@@ -101,3 +101,21 @@ body{
 .show-menu{
     right: 0;
 }
+
+
+/* HOME SECTION */
+.home-container{
+    padding-top: 3rem;
+    row-gap: 1.5rem;
+}
+
+.home-image{
+    width: 75%;
+    text-align: right;
+}
+
+@media screen and (max-width: 480px) {
+    .home-image {
+      width: 100%;
+    }
+  }
