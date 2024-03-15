@@ -34,3 +34,7 @@ const navLinkListAction = () => {
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(linkedItem => linkedItem.addEventListener('click', navLinkListAction));
+
+
+// When Scrolling down, I want the header to blur so it is more accessible for the users
+// Is there such a thing as listening to a scroll? 

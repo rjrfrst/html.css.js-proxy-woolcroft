@@ -132,7 +132,7 @@ body{
 
 /* HEADER AND NAV BAR SECTION: END */
 
-/* HOME SECTION START */
+/* HOME SECTION: START */
 .home-container{
     padding-top: 3rem;
     row-gap: 1.5rem;
@@ -210,4 +210,36 @@ body{
 
 .events-btn:hover{
     color:lightgreen;
+}
+
+/* HOME SECTION: END */
+
+/* ABOUT US SECTION: START  */
+.about-us{
+    text-align: center;
+}
+
+.about-us-container{
+    row-gap: 5rem;
+}
+
+.about-us-more-information{
+    row-gap: 5rem;
+}
+
+
+.about-us-box{
+    position: relative;
+    width: 100%;
+    padding: 5rem 0.5rem 0.5rem 0.5rem;
+    border: 2px solid lightgreen;
+    row-gap: 1rem;
+}
+
+.about-us-box img{
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+    justify-content: center;
 }
