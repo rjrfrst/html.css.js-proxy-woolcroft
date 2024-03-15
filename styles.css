@@ -3,7 +3,8 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 2em;
-    background: #2565AE
+    background: #2565AE;
+    color: white;
 }
 
 /* Colorschemes */
