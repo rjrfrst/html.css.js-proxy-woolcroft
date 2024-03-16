@@ -36,5 +36,17 @@ const navLinkListAction = () => {
 navLink.forEach(linkedItem => linkedItem.addEventListener('click', navLinkListAction));
 
 
+
+// Need to retry 
 // When Scrolling down, I want the header to blur so it is more accessible for the users
 // Is there such a thing as listening to a scroll? 
+const scrolled = () => {
+    const header = document.querySelector('.header');
+    // Using ternary operator
+    this.scroll >= 10 ? header.classList.add('scrolled') 
+                        : header.classList.remove('scrolled')
+}
+
+// In the window
+window.addEventListener('scroll', heavyColorHeader)
+

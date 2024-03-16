@@ -34,9 +34,8 @@ body{
     width: 100%;
     top: 0;
     left: 0;
-    background-color: transparent;
+    background: pink;
     /* trial  */
-    z-index: var(--z-fixed);
 }
 
 .nav{
@@ -44,7 +43,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 6em;
+    height: 3em;
 }
 
 .nav-home-logo,
@@ -130,6 +129,16 @@ body{
     right: 0;
 }
 
+/* Achieving a heavy header when scrolling to the bottom */
+.scrolled { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    backdrop-filter: blur(20px);
+    z-index: -1;
+}
+
 /* HEADER AND NAV BAR SECTION: END */
 
 /* HOME SECTION: START */
@@ -138,6 +147,7 @@ body{
     row-gap: 1.5rem;
     display: flex;
     flex-wrap: wrap;
+    background: #D5F3FE;
 }
 
 .home-image{
@@ -215,9 +225,11 @@ body{
 /* HOME SECTION: END */
 
 /* ABOUT US SECTION: START  */
+
 .about-us{
     text-align: center;
     background: #66D3FA;
+    margin-top: 5rem;
 }
 
 .about-us-container{
@@ -228,38 +240,8 @@ body{
     row-gap: 2.5rem;
 }
 
-/* ==========> FIRST */
-/* .about-us-card{
-    position: relative;
-    width: auto;
-    padding: 9rem 0.75rem 1.5rem 0.75rem;
-    border: 2px solid lightgreen;
-    border-radius: 1.5rem;
-    row-gap: 1rem;
-    display: flex; 
-    flex-direction: row;
-    background: transparent;
-}
 
-.about-us-card img{
-    max-width: 50%; 
-    height: auto; 
-    margin: 0 auto;
-    
-} */
 
-/* .about-us-img{
-    position: absolute;
-    top: -5rem;
-    left: 0;
-    right: 0;
-    width: auto;
-    margin: 0 auto;
-} */
-
-/* ====================> FIRST */
-
-/* ====================> SECOND */
 /* Cards for the about us section */
 .about-us-more-information{
     display: flex;
