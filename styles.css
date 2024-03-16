@@ -217,29 +217,89 @@ body{
 /* ABOUT US SECTION: START  */
 .about-us{
     text-align: center;
+    background: #66D3FA;
 }
 
 .about-us-container{
-    row-gap: 5rem;
+    row-gap: 3rem;
 }
 
 .about-us-more-information{
-    row-gap: 5rem;
+    row-gap: 2.5rem;
 }
 
-
-.about-us-box{
+/* ==========> FIRST */
+/* .about-us-card{
     position: relative;
-    width: 100%;
-    padding: 5rem 0.5rem 0.5rem 0.5rem;
+    width: auto;
+    padding: 9rem 0.75rem 1.5rem 0.75rem;
     border: 2px solid lightgreen;
+    border-radius: 1.5rem;
     row-gap: 1rem;
+    display: flex; 
+    flex-direction: row;
+    background: transparent;
 }
 
-.about-us-box img{
-    max-width: 100%; 
+.about-us-card img{
+    max-width: 50%; 
     height: auto; 
-    display: block; 
     margin: 0 auto;
-    justify-content: center;
+    
+} */
+
+/* .about-us-img{
+    position: absolute;
+    top: -5rem;
+    left: 0;
+    right: 0;
+    width: auto;
+    margin: 0 auto;
+} */
+
+/* ====================> FIRST */
+
+/* ====================> SECOND */
+/* Cards for the about us section */
+.about-us-more-information{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.about-us-card{
+    position: relative;
+    width: 200px;
+    padding: 0.5rem;
+    border-radius: 1rem;
+
+    /* max-width: fit-content;
+    max-height: fit-content;
+    
+    overflow: hidden; */
+    border: 2px solid green;
+}
+
+.about-us-card img{
+    /* position: absolute;
+    top: -4.5rem;
+    left: 0;
+    right: 0;
+    width: 180px; */
+    margin: auto;
+
+
+    width: 200px; 
+    height:auto;
+}
+
+
+about-sub-title{
+    font-size: 10px;
+    text-align: center;
+}
+
+/* Adding designs and position to the cards */
+.about-us-card:hover {
+    transform: translateY(-0.5rem);
 }
