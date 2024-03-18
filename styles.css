@@ -143,7 +143,8 @@ body{
 
 /* HOME SECTION: START */
 .home-container{
-    padding-top: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     row-gap: 1.5rem;
     display: flex;
     flex-wrap: wrap;
@@ -234,6 +235,7 @@ body{
 
 .about-us-container{
     row-gap: 3rem;
+    padding-bottom: 1rem;
 }
 
 .about-us-more-information{
@@ -294,6 +296,7 @@ about-sub-title{
 
 .events-container{
     padding-top: 1rem;
+    padding-bottom: 1rem;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem 1rem;
 
@@ -328,11 +331,52 @@ about-sub-title{
     transform: translateY(-0.5rem);
 }
 
-
-
-
-
-
-
-
 /* EVENTS SECTION: END */
+
+
+/* HOURS SECTION: START */
+.hours-section{
+    margin-top: 5rem;
+    text-align: center;
+    background: #66D3FA;
+}
+
+.hours-container{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 1rem;
+
+    /*  */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.hours-img{
+    width: 270px;
+    max-width: 100%;
+    justify-self: center;
+}
+
+.hours-content{
+    display: grid;
+    row-gap: 1rem;
+    text-align: center;
+}
+
+.hours-main-title{
+    font-size: 18px;
+    margin: 0;
+}
+
+.hours-details{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+
+/* HOURS SECTION: END */

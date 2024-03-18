@@ -43,7 +43,7 @@ navLink.forEach(linkedItem => linkedItem.addEventListener('click', navLinkListAc
 const scrolled = () => {
     const header = document.querySelector('.header');
     // Using ternary operator
-    this.scroll >= 10 ? header.classList.add('scrolled') 
+    this.scroll <= 10 ? header.classList.add('scrolled') 
                         : header.classList.remove('scrolled')
 }
 
