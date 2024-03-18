@@ -26,8 +26,30 @@ img{
     height: auto;
 }
 
+ul{
+    list-style: none;
+}
 
-/* SUPER EDITED ALL #2: START */
+/* Classes */
+.container{
+    max-width: 1500px;
+    margin-inline: 1rem;
+    
+}
+
+.grid{
+    display: grid;
+    gap: 1rem;
+}
+
+.section{
+    padding-block: 1rem 1rem;
+}
+
+.main{
+    overflow: hidden;
+}
+/* SUPER EDITED ALL #2: END */
 
 
 
@@ -428,7 +450,24 @@ about-sub-title{
 }
 
 .footer-content{
-    grid-template-columns: ;
+    grid-template-columns: repeat(2, max-content);
+    gap: 2rem 1rem;
 }
 
+.footer-links{
+    display: grid;
+    row-gap: 1rem;
+}
+
+.footer-link{
+    color: gray;
+    text-decoration: none;
+}
+
+.footer-extra{
+    display: block;
+    margin-top: 4rem;
+    text-align: center;
+    font-size: smaller;
+}
 /* FOOTER: END */
