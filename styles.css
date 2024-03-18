@@ -7,6 +7,30 @@ body{
     color: white;
 }
 
+
+/* SUPER EDITED ALL #2: START */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* SUPER EDITED ALL #2: START */
+
+
+
 /* Colorschemes */
 .first-color{
     background: #3C99DC;
@@ -335,7 +359,7 @@ about-sub-title{
 
 
 /* HOURS SECTION: START */
-.hours-section{
+.hours{
     margin-top: 5rem;
     text-align: center;
     background: #66D3FA;
@@ -376,7 +400,35 @@ about-sub-title{
     
 }
 
-
-
-
 /* HOURS SECTION: END */
+
+/* FOOTER: START */
+.footer{
+    padding-block: 4rem 2rem;
+}
+
+.footer-container{
+    row-gap: 3rem;
+}
+
+.footer-logo{
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.2rem;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+.footer-description{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.footer-content{
+    grid-template-columns: ;
+}
+
+/* FOOTER: END */
