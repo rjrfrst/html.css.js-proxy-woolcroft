@@ -37,6 +37,8 @@ navLink.forEach(linkedItem => linkedItem.addEventListener('click', navLinkListAc
 
 
 
+
+
 // Need to retry 
 // When Scrolling down, I want the header to blur so it is more accessible for the users
 // Is there such a thing as listening to a scroll? 

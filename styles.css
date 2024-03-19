@@ -80,8 +80,10 @@ ul{
     width: 100%;
     top: 0;
     left: 0;
-    background: pink;
-    /* trial  */
+    background: transparent;
+    height: 1rem;
+    /* By adding the Z-index I was able to put the nav(header) in front of other sections! */
+    z-index: 1000;
 }
 
 .nav{
@@ -89,7 +91,7 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 3em;
+    height: 3rem;
 }
 
 .nav-home-logo,
@@ -106,7 +108,6 @@ ul{
     color: white;
     text-decoration: none;
 }
-
 
 
 .nav-menu-clickable{
@@ -146,12 +147,11 @@ ul{
 }
 
 .nav-link:hover{
-    color: darkblue;
+    color: white;
 }
 
 /* Need to make sure that it is responsive */
 /* Have a mobile design approach */
-
 @media screen and (max-width: 1605px) {
     .nav-menu{
         position: fixed;
@@ -159,13 +159,12 @@ ul{
 
         /* If this is -100% the whole nav bar disappears */
         right: -500%;
-
         background-color: darkslateblue;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
         width: 80%;
         height: 100%;
         padding: 6rem 3rem 0;
-
         /* Create a transition when a hamburger menu is created */
         transition: right 0.4s;         
     }
@@ -205,26 +204,22 @@ ul{
     justify-content: center;
 }
 
-/* @media screen and (max-width: 480px) {
-    .home-image {
-      width: 50%;
-    }
-  } */
-
 .home-title{
     text-align: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .home-quote{
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .home-description{
     text-align: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
+/* Home buttons  */
 .home-buttons{
     display: flex;
     justify-content: center;
@@ -254,6 +249,8 @@ ul{
 .about-us-btn span{
     background-color: lightgreen;
     border-radius: 50%;
+    display: grid;
+    transition: transform 0.5s;
 }
 
 .about-us-btn:hover span{
@@ -276,7 +273,11 @@ ul{
 .about-us{
     text-align: center;
     background: #66D3FA;
-    margin-top: 5rem;
+    margin-top: 2rem;
+}
+
+.about-us-title{
+    margin-bottom: 1rem;
 }
 
 .about-us-container{
@@ -287,8 +288,6 @@ ul{
 .about-us-more-information{
     row-gap: 2.5rem;
 }
-
-
 
 /* Cards for the about us section */
 .about-us-more-information{
@@ -302,13 +301,12 @@ ul{
     width: 200px;
     padding: 0.5rem;
     border-radius: 1rem;
-
-    /* max-width: fit-content;
-    max-height: fit-content;
     
-    overflow: hidden; */
+    overflow: hidden;
     border: 2px solid green;
 }
+
+
 
 .about-us-card img{
     /* position: absolute;
@@ -321,8 +319,8 @@ ul{
     height:auto;
 }
 
-about-sub-title{
-    font-size: 10px;
+.about-sub-title{
+    font-size: 16px;
     text-align: center;
 }
 
