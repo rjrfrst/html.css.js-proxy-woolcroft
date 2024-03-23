@@ -501,7 +501,7 @@ a{
 .back-to-top{
     position: fixed;
     right: 1rem;
-    bottom: 3rem;
+    bottom: -3rem;
     display: inline-flex;
     padding: 5px;
     transition: bottom 0.4s, transform 0.4s;
@@ -510,4 +510,8 @@ a{
 
 .back-to-top:hover{
     transform: translateY(-0.5rem);
+}
+
+.show-back-to-top{
+    bottom: 3rem;
 }

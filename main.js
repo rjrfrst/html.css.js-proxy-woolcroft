@@ -37,16 +37,26 @@ navLink.forEach(linkedItem => linkedItem.addEventListener('click', navLinkListAc
 
 
 
-// Need to retry 
+// Need to retry = Fixed!!!
 // When Scrolling down, I want the header to blur so it is more accessible for the users
 // Is there such a thing as listening to a scroll? 
 const scrolledBlur = () => {
     const header = document.querySelector('.header');
     // Using ternary operator
+    // Error fixed, needed to insert the XYZ direction of the scroll therefore, it wasn't working during the first intial try
     this.scrollY >= 50 ? header.classList.add('scrolled-header') 
                         : header.classList.remove('scrolled-header')
 }
-
 // In the window
 window.addEventListener('scroll', scrolledBlur)
 
+
+
+// Making sure that the back-to-top button only appears when it reaches certain the next section
+const scrollToTop = () => {
+    const backToTop = document.querySelector('.back-to-top')
+
+    this.scrollY >= 350 ? backToTop.classList.add('show-back-to-top') 
+                        : backToTop.classList.remove('show-back-to-top')
+}
+window.addEventListener('scroll', scrollToTop);
