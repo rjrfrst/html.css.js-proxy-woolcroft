@@ -7,9 +7,7 @@ body{
     color: white;
 }
 
-
 /* SUPER EDITED ALL #2: START */
-
 *{
     box-sizing: border-box;
     padding: 0;
@@ -28,6 +26,11 @@ img{
 
 ul{
     list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 /* Classes */
@@ -175,14 +178,20 @@ ul{
 }
 
 /* Achieving a heavy header when scrolling to the bottom */
-.scrolled { 
+.scrolled-header::after{
+    content: '';
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: pink;
-    backdrop-filter: blur(20px);
+    width: 1000%;
+    height: 250%;
+    background-color: hsla(230, 25%, 5%, 0.5);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    top: 0;
+    left: 0;
     z-index: -1;
+
 }
+
 
 /* HEADER AND NAV BAR SECTION: END */
 
@@ -304,8 +313,8 @@ ul{
     
     overflow: hidden;
     border: 2px solid green;
+    
 }
-
 
 
 .about-us-card img{
@@ -469,3 +478,36 @@ ul{
     font-size: smaller;
 }
 /* FOOTER: END */
+
+/* SCROLL BAR: START */
+
+::-webkit-scrollbar{
+    width: 0.5rem;
+    background-color: hsl(225, 5%, 20%);
+}
+
+::-webkit-scrollbar-thumb{
+    width: 0.5rem;
+    background-color: hsl(225, 5%, 30%);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    width: 0.5rem;
+    background-color: hsl(225, 5%, 30%);
+}
+
+/* SCROLL BAR: END */
+
+.back-to-top{
+    position: fixed;
+    right: 1rem;
+    bottom: 3rem;
+    display: inline-flex;
+    padding: 5px;
+    transition: bottom 0.4s, transform 0.4s;
+    box-shadow: 0 12px 24px hsla(225, 50%, 5%, 0.5);
+}
+
+.back-to-top:hover{
+    transform: translateY(-0.5rem);
+}
