@@ -61,3 +61,28 @@ const scrollToTop = () => {
                         : backToTop.classList.remove('show-back-to-top')
 }
 window.addEventListener('scroll', scrollToTop);
+
+
+// Create an active link color whatever the section display is in for the nav/header bar
+// get all sections and only target their id since id's are unique to themselves and cannot be repeated
+const allSections = document.querySelectorAll('section[id]')
+
+const scrollCurrent = () => {
+    const scrollDownwards = window.scrollY
+
+    // creating a foreach since I want this to occur for each sections in the body
+    allSections.forEach(current => {
+        const sectionHeight = current.offsetHeight, //gets the height of the current section
+                sectionTop = current.offsetTop - 60,
+                sectionId = current.getAttribute('id'),
+                sectionClass = document.querySelector('.nav-menu a[href*=' + sectionId + ']')
+
+        if(scrollDownwards > sectionTop && scrollDownwards <= sectionTop + sectionHeight){
+            sectionClass.classList.add('active-link-nav')
+        } else {
+            sectionClass.classList.remove('active-link-nav')
+        }
+        
+    })
+}
+window.addEventListener('scroll', scrollCurrent)

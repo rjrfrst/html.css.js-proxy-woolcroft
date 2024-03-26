@@ -192,6 +192,11 @@ a{
 
 }
 
+/* Editing the nav bar to focus on where the users are in the site */
+.active-link-nav{
+    color: darkgreen;
+}
+
 
 /* HEADER AND NAV BAR SECTION: END */
 
