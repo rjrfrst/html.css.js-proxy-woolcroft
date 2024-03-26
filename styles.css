@@ -202,12 +202,12 @@ a{
 
 /* HOME SECTION: START */
 .home-container{
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-bottom: 1rem;
     row-gap: 1.5rem;
     display: flex;
     flex-wrap: wrap;
-    background: #D5F3FE;
+    background: #66D3FA;
 }
 
 .home-image{
@@ -532,3 +532,122 @@ a{
 .show-back-to-top{
     bottom: 3rem;
 }
+
+
+/* RESPONSIVENESS: START */
+/* =======================================> Media screen guide <========================
+<style type="text/css">
+    default styles here for older browsers. 
+        I tend to go for a 600px - 960px width max but using percentages
+    
+    @media only screen and (min-width: 960px) {
+        styles for browsers larger than 960px;
+    }
+    @media only screen and (min-width: 1440px) {
+        styles for browsers larger than 1440px;
+    }
+    @media only screen and (min-width: 2000px) {
+        for sumo sized (mac) screens
+    }
+    @media only screen and (max-device-width: 480px) {
+        styles for mobile browsers smaller than 480px; (iPhone)
+    }
+    @media only screen and (device-width: 768px) {
+        default iPad screens
+    }
+    different techniques for iPad screening
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+        For portrait layouts only
+    }
+
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        For landscape layouts only
+    }
+</style>
+*/
+
+@media screen and (max-width: 325px){
+    /* Home */
+    .container{
+        margin-inline: 1rem;
+    }
+
+    .home-title{
+        font-size: 0.9rem;
+    }
+
+    .home-quote{
+        font-size: 0.7rem;
+    }
+
+    .home-container{
+        font-size: smaller;
+    }
+
+    .home-buttons{
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    /* About us */
+    .about-us-container{
+        grid-template-columns: 150px;
+        justify-content: center;
+    }
+
+    /* footer */
+    .footer-content{
+        grid-template-columns: max-content;
+    }
+
+}
+
+@media screen and (device-width: 600px) {
+    .home-container{
+        grid-template-columns: 350px;
+        justify-content: center;
+    }
+
+    .footer-content{
+        grid-template-columns: repeat(3, max-content);
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    .nav-menu{ 
+        width: 40%;
+    }
+
+    .footer-content{
+        grid-template-columns: repeat(3, max-content);
+        justify-content: space-evenly;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .container{
+            margin-inline: auto;
+        }
+
+        .section{
+            padding-block: 7rem 2rem;
+        }
+        .section-title{
+            margin-bottom: 1rem;
+        }
+
+        .home-container{
+            grid-template-columns: 450px 535px;
+            align-items: center;
+            column-gap: 3rem;
+            padding-top: 3rem;
+        }
+
+        .home-image{
+            width: 480px;
+        }
+    }
+}
+
+
+/* RESPONSIVENESS: END */
