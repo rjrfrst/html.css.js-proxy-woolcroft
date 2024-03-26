@@ -447,7 +447,7 @@ a{
     color: white;
     font-size: 12px;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     text-decoration: none;
 }
 
@@ -458,7 +458,15 @@ a{
 
 .footer-content{
     grid-template-columns: repeat(2, max-content);
-    gap: 2rem 1rem;
+    gap: 1.5rem 4rem;
+}
+
+.footer-content h7{
+    font-size: small;
+}
+
+.footer-title{
+    margin-bottom: 0.25rem;
 }
 
 .footer-links{
@@ -467,8 +475,12 @@ a{
 }
 
 .footer-link{
-    color: gray;
+    color: lightgray;
     text-decoration: none;
+}
+
+.footer-link:hover{
+    color: darkgreen;
 }
 
 .footer-extra{

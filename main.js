@@ -56,6 +56,7 @@ window.addEventListener('scroll', scrolledBlur)
 const scrollToTop = () => {
     const backToTop = document.querySelector('.back-to-top')
 
+    // Insert Y direction of the scroll
     this.scrollY >= 350 ? backToTop.classList.add('show-back-to-top') 
                         : backToTop.classList.remove('show-back-to-top')
 }
